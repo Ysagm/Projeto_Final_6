@@ -17,36 +17,47 @@ public class CameraBehaviour : MonoBehaviour
 
 	
 	// Update is called once per frame
-	void LateUpdate () {
-		if(!lostGame){
-			if(target.transform.position.y > transform.position.y){
+	void LateUpdate() 
+	{
+		if(!lostGame)
+		{
+			if(target.transform.position.y > transform.position.y)
+			{
 				transform.position = Vector3.Lerp(transform.position, 
 					new Vector3(transform.position.x,target.transform.position.y,transform.position.z), cameraSpeed * Time.deltaTime);
 				score += Time.deltaTime * 15f;
+
 				scoreText.text = "Score: "+ (int) score;
 			}
 		}
-
 	}
 
-	void OnCollisionEnter(Collision other){
-		if(other.gameObject.tag.Equals("Player")){
+	void OnCollisionEnter(Collision other)
+	{
+		if(other.gameObject.tag.Equals("Player"))
+		{
 			lostGame = true;
-			if(score > PlayerPrefs.GetInt("bestScore")) PlayerPrefs.SetInt("bestScore",(int) score);
+			if (score > PlayerPrefs.GetInt("bestScore"))
+			{
+				PlayerPrefs.SetInt("bestScore", (int)score);
+			}
 			loseGame();
 		}
 	}
 
-	void loseGame(){
+	void loseGame()
+	{
 		losePanel.SetActive(true);
 		loseText.text = "Game over!\n Score: "+(int) score+ "\nBest score: "+PlayerPrefs.GetInt("bestScore");
 		Destroy(target.gameObject);
 	}
 
-	public void quit(){
+	public void quit()
+	{
 		Application.Quit();
 	}
-	public void startAgain(){
+	public void startAgain()
+	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 }

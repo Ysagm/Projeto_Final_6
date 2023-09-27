@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8368920334558317018}
   - component: {fileID: 9075236004531000097}
   - component: {fileID: 3500137326284509574}
-  - component: {fileID: 251354223841607346}
   - component: {fileID: 114086667077390360}
   m_Layer: 0
   m_Name: super recharge pad
@@ -99,25 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.49349022, z: 1}
   m_Center: {x: 0, y: 0.2532549, z: 0}
---- !u!251 &251354223841607346
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312017602820364}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!114 &114086667077390360
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,10 +6,13 @@ public class PadBehaviour : MonoBehaviour {
 
 	public float jumpForce = 10f;
 
-	void OnCollisionEnter(Collision other){
-		if(other.relativeVelocity.y <= 0){
+	void OnCollisionEnter(Collision other)
+	{
+		if(other.relativeVelocity.y <= 0)
+		{
 			Rigidbody rb = other.collider.GetComponent<Rigidbody>();
-			if( rb != null) {
+			if( rb != null) 
+			{
 				rb.velocity = new Vector2(0,jumpForce);
 			}
 		}

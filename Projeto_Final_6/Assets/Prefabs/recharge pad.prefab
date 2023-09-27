@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: -3493463517337045424}
   - component: {fileID: -8159159472683089817}
   - component: {fileID: -5757821979323129562}
-  - component: {fileID: 251473645359244838}
   - component: {fileID: 114391151886763446}
   m_Layer: 0
   m_Name: recharge pad
@@ -99,25 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5536331, z: 1}
   m_Center: {x: 0, y: 0.22318345, z: 0}
---- !u!251 &251473645359244838
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843215839666798}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!114 &114391151886763446
 MonoBehaviour:
   m_ObjectHideFlags: 0
