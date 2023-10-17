@@ -21,6 +21,7 @@ public class PlayerBehaviour : MonoBehaviour
 	void Update () 
 	{
 		movement = Input.GetAxis("Horizontal") * movementSpeed;
+		Debug.Log("MOVIMENTAAAAAAA" + " " + movement);
 	}
 
 	void FixedUpdate()
