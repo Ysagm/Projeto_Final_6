@@ -7,6 +7,8 @@ public class Menu : MonoBehaviour
 {
     public GameObject menuPanel;
     public GameObject playBtn;
+    public GameObject optionsBtn;
+    public GameObject creditsBtn;
 
     public void StartGame()
     {
