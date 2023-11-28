@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9075236004531000097}
   - component: {fileID: 3500137326284509574}
   - component: {fileID: 114086667077390360}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: super recharge pad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,3 +111,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 25
+  sound: []
