@@ -15,7 +15,7 @@ public class CameraBehaviour : MonoBehaviour
 	//Target -> character
 	public Transform target;
 	//velocidade da camera
-	public float cameraSpeed = 5f;
+	public float cameraSpeed = 200f;
 	bool lostGame = false;
 
 	
